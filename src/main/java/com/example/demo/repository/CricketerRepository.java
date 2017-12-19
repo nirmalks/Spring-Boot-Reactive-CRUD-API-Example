@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.model.Cricketer;
 
 @Repository
-public interface CricketerRepository extends ReactiveCrudRepository<Cricketer , Long>{
+public interface CricketerRepository extends ReactiveCrudRepository<Cricketer , String>{
 
 }
