@@ -79,5 +79,9 @@ public class CricketerHandler {
 		return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
 				.body(deleteCricketer, Void.class);
 	}
+
+	public Mono<ServerResponse> exceptionExample(ServerRequest serverRequest) {
+		throw new RuntimeException("RuntimeException occurred");
+	}
 	
 }

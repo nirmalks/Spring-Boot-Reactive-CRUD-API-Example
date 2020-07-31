@@ -28,4 +28,12 @@ class RouterConfig {
                         , cricketerHandler::deleteCricketer)
                 ;
     }
+    
+    @Bean
+    public RouterFunction<ServerResponse> errorRoute(CricketerHandler cricketerHandler) {
+        return RouterFunctions.
+                route(GET("/runtimeexception").and(accept(MediaType.APPLICATION_JSON))
+                        , cricketerHandler::exceptionExample);
+
+    }
 }

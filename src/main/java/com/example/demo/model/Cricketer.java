@@ -47,6 +47,11 @@ public class Cricketer {
 	public void setHighestScore(String highestScore) {
 		this.highestScore = highestScore;
 	}
-	
-	
+
+	public Cricketer(String id, String name, String country, String highestScore) {
+		this.id = id;
+		this.name = name;
+		this.country = country;
+		this.highestScore = highestScore;
+	}
 }
